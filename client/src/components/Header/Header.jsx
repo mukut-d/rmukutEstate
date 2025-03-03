@@ -3,7 +3,7 @@ const Header = () => {
     <section className="h-wrapper">
       <div className="flexCenter padding h-container">
         <img
-          src={"../../../public/assets/images/logo.jpg"}
+          src={"/assets/images/logo.jpg"}
           alt="logo"
           width={"100"}
         />
