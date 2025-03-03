@@ -1,0 +1,12 @@
+.extra-wrapper {
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.extra-container {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
