@@ -1,6 +1,6 @@
 import "./Extra.css";
 import { HiLocationMarker } from "react-icons/hi";
-
+import CountUp from "react-countup";
 const Extra = () => {
   return (
     <section className="extra-wrapper">
@@ -20,10 +20,19 @@ const Extra = () => {
             </span>
           </div>
           <div className="flexCenter search-bar">
-            <HiLocationMarker color={"blue"} size={25}>
-              <input type="text" />
-              <button className="button">Search</button>
-            </HiLocationMarker>
+            <HiLocationMarker color={"blue"} size={25} />
+            <input type="text" />
+            <button className="button">Search</button>
+          </div>
+
+          <div className="flexCenter stat">
+            <div className="flexColStart stat">
+              <span>
+                <CountUp start={8000} end={9000} duration={5} />
+              </span>
+              <span>Premium Properties</span>
+              <span></span>
+            </div>
           </div>
         </div>
 
