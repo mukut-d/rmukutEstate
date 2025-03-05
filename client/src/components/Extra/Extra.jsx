@@ -54,7 +54,7 @@ const Extra = () => {
 
         <div className="extra-right flexCenter">
           <div className="image-container">
-            <img src="/assets/images/building.jpg" alt="building" />
+            <img src="./building.jpg" alt="building" />
           </div>
         </div>
       </div>

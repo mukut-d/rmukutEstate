@@ -1,3 +1,4 @@
+import "./Companies.css";
 const Companies = () => {
   return (
     <>
