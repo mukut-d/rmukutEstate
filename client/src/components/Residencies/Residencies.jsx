@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./Residencies.css";
 import data from "../../utilities/slider.json";
+import { sliderSettings } from "../../utilities/common";
 
 const Residencies = () => {
   return (
@@ -12,18 +13,19 @@ const Residencies = () => {
           <span className="primaryText">Popular Residencies</span>
         </div>
 
-        <Swiper>
+        <Swiper {...sliderSettings}>
           {data?.map((card, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="r-card">
+                <div className="flexColStart r-card">
                   <img src={card.image} alt={card.name} />
                   <span className="secondaryText r-price">
-                    <span style={{ color: "orange" }}>$</span>
+                    <span style={{ color: "orange" }}>$ </span>
                     <span>{card.price}</span>
                   </span>
+
                   <span className="primaryText">{card.name}</span>
-                  <span className="primaryText">{card.detail}</span>
+                  <span className="secondaryText">{card.detail}</span>
                 </div>
               </SwiperSlide>
             );
