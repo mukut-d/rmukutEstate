@@ -1,0 +1,14 @@
+.v-container .image-container {
+  border: 10px solid black;
+}
+
+.v-container > div {
+  flex: 1;
+  /* background-color: orange; */
+}
+
+.v-right {
+  gap: 0.5rem;
+}
+
+
