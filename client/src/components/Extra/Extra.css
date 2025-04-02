@@ -81,7 +81,7 @@
 
 @media (max-width: 640px) {
   .hero-container {
-    magin-top: 2rem;
+    margin-top: 2rem;
   }
   .extra-title > h1 {
     font-size: 2.5rem;

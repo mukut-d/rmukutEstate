@@ -59,9 +59,17 @@ const Extra = () => {
         </div>
 
         <div className="extra-right flexCenter">
-          <div className="image-container">
+          <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 4,
+              type: "ease-in",
+            }}
+            className="image-container"
+          >
             <img src="./building.jpg" alt="building" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
