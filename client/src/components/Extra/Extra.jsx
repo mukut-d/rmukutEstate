@@ -1,6 +1,8 @@
 import "./Extra.css";
 import { HiLocationMarker } from "react-icons/hi";
+import { motion } from "framer-motion";
 import CountUp from "react-countup";
+
 const Extra = () => {
   return (
     <section className="extra-wrapper">
@@ -8,9 +10,13 @@ const Extra = () => {
         <div className="flexColStart extra-left">
           <div className="extra-title">
             <div className="blueCircle"></div>
-            <h1>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 4, type: "ease-in" }}
+            >
               Discover <br /> Most Perfect <br /> Property
-            </h1>
+            </motion.h1>
           </div>
           <div className="extra-des flexColStart">
             <span className="secondaryText">
